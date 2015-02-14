@@ -160,13 +160,13 @@ namespace detail_stream {
 #define BP_TEST(TEST_CASE_NAME, TEST_NAME) BP_TEST_INTERNAL(TEST_CASE_NAME, TEST_NAME)
 // Define this macro to 1 to omit the definition of TEST(), which
 // is a generic name and clashes with some other libraries.1
-#if !BP_TEST_DONT_DEFINE_TEST
+#ifndef BP_TEST_DONT_DEFINE_TEST
 #define TEST(TEST_CASE_NAME, TEST_NAME) BP_TEST(TEST_CASE_NAME, TEST_NAME)
 #endif
 
 #define BP_TEST_RUN_ALL_TESTS() bp::test::TestCaseManager::Instance()->RunAllTests()
 
-#if !BP_TEST_DONT_DEFINE_RUN_ALL_TESTS
+#ifndef BP_TEST_DONT_DEFINE_RUN_ALL_TESTS
 #define RUN_ALL_TESTS() BP_TEST_RUN_ALL_TESTS()
 #endif
 
