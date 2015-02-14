@@ -1,0 +1,7 @@
+*.in ident eol=lf
+*.h ident eol=lf
+*.c ident eol=lf
+*.hpp ident eol=lf
+*.cpp ident eol=lf
+*.txt ident eol=lf
+*.cmake ident eol=lf
